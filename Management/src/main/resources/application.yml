@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: management
+  datasource:
+      username: 'acode'
+      url: jdbc:postgresql://localhost:5432/management
+      password: '3316'
+  jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: 'true'
+      hibernate:
+        ddl-auto: update
+      show-sql: 'true'
